@@ -143,7 +143,7 @@
                             <!-- Loading stuff -->
                         </div>
 
-                        <p>You can also embed your GitHub activities using Casey Scarborough's <a href="https://caseyscarborough.com/projects/github-activity/" target="_blank">GitHub Activity Stream</a> widget.        
+                        <p>You can also embed your GitHub activities using Casey Scarborough's GitHub Activity Stream.        
                         <!--//Usage: https://caseyscarborough.com/projects/github-activity/ -->                       
                         <div id="ghfeed" class="ghfeed">
                         </div><!--//ghfeed-->
@@ -343,6 +343,7 @@
     <script type="text/javascript" src="assets/js/main.js"></script>    
     <script>
         GitHubCalendar(".calendar", "martijnmeeldijk", { responsive: true });
+        GitHubActivity.feed({ username: "martijnmeeldijk", selector: "#ghfeed" });
     </script>        
 </body>
 </html> 
